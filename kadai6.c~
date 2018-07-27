@@ -19,7 +19,7 @@ void make_vector(vector v){
   v[1] = 2;
   v[2] = 3;
 }
-
+//内積
 void ip(matrix m, vector v,vector y){
   int i,j;
 for(i = 0; i < N; i++){
@@ -71,6 +71,6 @@ int main(void){
   double e = 5;
   double e_k;
   e_k = power_method(A, x, e);
-  printf("%le\n", e_k);
+  printf("last %le\n", e_k);
   return 0;
 }
